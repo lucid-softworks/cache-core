@@ -6,6 +6,7 @@ explicit fresh and stale deadlines plus deduplicated invalidation tags.
 ```ts
 import { createCacheRecord } from "@lucid-softworks/cache-core";
 
+const profile = { id: "user-42", name: "Ada" };
 const record = createCacheRecord(profile, {
   ttl: 60_000,
   staleWhileRevalidate: 300_000,
